@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Info from './Info';
 
 const Counter = () => {
   const [count, setCount] = useState(0)
@@ -15,6 +16,7 @@ const Counter = () => {
         <button className= 'pb-1 px-4 shadow-lg bg-fuchsia-900 text-xl text-fuchsia-200  border rounded-xl border-t-neutral-900' onClick={() => setCount((count) => count*0)}>
         Reset
         </button>
+        <Info value ={count}/>
       </div>
     );
 };
