@@ -6,7 +6,7 @@ const Counter = () => {
 
     return (
         <div className="card">
-        <p className='text-2xl text-red-600 mb-5'>counting value {count}</p>
+        <p className={`text-2xl font-bold ${count>=0? count>=10 ? "text-green-700": "text-yellow-500": "text-red-700"} text-red-600 mb-5`}>counting value {count}</p>
         <button className= 'pb-1 px-4 bg-fuchsia-900 text-xl text-fuchsia-200  border rounded-xl border-t-neutral-900' onClick={() => setCount((count) => count + 1)}>
         Increase
         </button>
